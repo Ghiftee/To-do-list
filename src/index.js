@@ -4,12 +4,12 @@ const tasks = [
     {
         description: 'Task 1',
         completed: false,
-        index: 0
+        index: 1
     },
     {
         description: 'Task 2',
         completed: false,
-        index: 1
+        index: 0
     },
     {
         description: 'Task 3',
@@ -23,8 +23,9 @@ function populate() {
     const taskList = document.getElementById('task-list');
     // Cleared anything in the taskList previously
     taskList.innerHTML = '';
-    // Loop over tasks array
-    tasks.forEach((task) => {
+    // Loop over tasks array but first sort according to index
+    const sortedTask = tasks.sort((a,b) => a.index - b.index);
+    sortedTask.forEach((task) => {
         // Create a new list item
         const listItem = document.createElement('li');
         // set list item text to description
@@ -33,3 +34,5 @@ function populate() {
         taskList.append(listItem);
     })
 }
+
+document.addEventListener('DOMContentLoaded', populate);

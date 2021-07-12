@@ -16,4 +16,20 @@ const tasks = [
         completed: false,
         index: 2
     }
-]
+];
+
+function populate() {
+    // Got element by id from html
+    const taskList = document.getElementById('task-list');
+    // Cleared anything in the taskList previously
+    taskList.innerHTML = '';
+    // Loop over tasks array
+    tasks.forEach((task) => {
+        // Create a new list item
+        const listItem = document.createElement('li');
+        // set list item text to description
+        listItem.innerHTML = task.description
+        // add li element to ul in html with id of task-list
+        taskList.append(listItem);
+    })
+}

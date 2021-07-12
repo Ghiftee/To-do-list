@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ghiftee.github.io/To-do-list/)
+[Live Demo Link](https://ghiftee.github.io/To-do-list/dist/)
 
 ## Getting Started
 

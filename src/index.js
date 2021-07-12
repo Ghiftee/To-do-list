@@ -14,14 +14,14 @@ const tasks = [
   {
     description: 'Task 3',
     completed: false,
-    index: 2
-  }
+    index: 2,
+  },
 ];
 
 function populate() {
   const taskList = document.getElementById('task-list');
   taskList.innerHTML = '';
-  const sortedTask = tasks.sort((a,b) => a.index - b.index);
+  const sortedTask = tasks.sort((a, b) => a.index - b.index);
   sortedTask.forEach((task) => {
     const listItem = document.createElement('li');
     listItem.classList.add('border-bottom', 'p-3', 'pt-2', 'pb-2', 'd-flex', 'flex-row', 'justify-content-between', 'align-items-center');

@@ -30,15 +30,15 @@ body {
   transform: rotate(90deg);
 }
 
-.placeholder-italic:-ms-input-placeholder {
-  font-style: italic;
-}
-
 .placeholder-italic::-webkit-input-placeholder {
   font-style: italic;
 }
 
 .placeholder-italic::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.placeholder-italic:-ms-input-placeholder {
   font-style: italic;
 }
 

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.no-list-style {
+  list-style-type: none;
+}
+
+.no-focus:focus {
+  outline: none;
+}
+
+.box-shadow {
+  box-shadow: 0 0 5px 2px #cecece;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.placeholder-italic::placeholder {
+  font-style: italic;
+}
+
+.font-sm {
+  font-size: smaller;
+}

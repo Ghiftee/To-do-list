@@ -14,6 +14,16 @@
 - Use a function to iterate over tasks
 - Add basic styling
 
+### Milestone 2:
+
+- Add drag and drop javascript files
+- Add methods for status updates
+- Import new files as modules
+- Add event listeners to list items
+- Make object values update based on index and completed tasks
+- Add strikethrough styling
+- Store items in local storage
+
 ## Built With
 
 - HTML, SCSS, Bootstrap, Webpack, Javascript
@@ -26,7 +36,7 @@
 
 To get a local copy up and running:
 
-You should have basic knowledge of HTML,Webpack, Javascript, a text editor and chrome browser.
+You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser.
 
 ## Authors
 

@@ -29,7 +29,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/Interactive-list/dist/index.html)
+[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/main/dist/index.html)
 
 ## Getting Started
 

@@ -5,10 +5,11 @@
 
 body {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
 }
 
@@ -22,23 +23,23 @@ body {
 
 .box-shadow {
   -webkit-box-shadow: 0 0 5px 2px #cecece;
-  box-shadow: 0 0 5px 2px #cecece;
+          box-shadow: 0 0 5px 2px #cecece;
 }
 
 .rotate-90 {
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .placeholder-italic::-webkit-input-placeholder {
   font-style: italic;
 }
 
-.placeholder-italic::-ms-input-placeholder {
+.placeholder-italic:-ms-input-placeholder {
   font-style: italic;
 }
 
-.placeholder-italic:-ms-input-placeholder {
+.placeholder-italic::-ms-input-placeholder {
   font-style: italic;
 }
 
@@ -48,5 +49,9 @@ body {
 
 .font-sm {
   font-size: smaller;
+}
+
+.strike {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=styles.css.map */

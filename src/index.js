@@ -2,7 +2,9 @@ import './css/styles.css';
 import { dragStart, dragOver, drop } from './drag.js';
 import updateStatus from './status.js';
 
-const allTasks = [
+const taskList = document.getElementById('task-list');
+
+let allTasks = [
   {
     description: 'Task 1',
     completed: false,
@@ -34,8 +36,6 @@ const allTasks = [
     index: 5,
   },
 ];
-
-const taskList = document.getElementById('task-list');
 
 function populate(tasks) {
   taskList.innerHTML = '';
@@ -82,6 +82,12 @@ taskList.addEventListener('drop', (e) => {
   const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
   drop(e, sortedTasks, populate);
 });
+
+if (localStorage.getItem('tasks')) {
+  allTasks = JSON.parse(localStorage.getItem('tasks'));
+} else {
+  localStorage.setItem('tasks', JSON.stringify(allTasks));
+}
 
 const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
 document.addEventListener('DOMContentLoaded', populate(sortedTasks));

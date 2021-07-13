@@ -19,6 +19,7 @@ function drop(e, sortedTask, populate) {
     a.index = b;
   });
 
+  localStorage.setItem('tasks', JSON.stringify(sortedTask));
   populate(sortedTask);
   e.stopPropagation();
 }

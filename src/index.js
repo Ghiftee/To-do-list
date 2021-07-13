@@ -1,4 +1,6 @@
 import './css/styles.css';
+import './drag.js';
+import './status.js';
 
 const tasks = [
   {

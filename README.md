@@ -14,22 +14,35 @@
 - Use a function to iterate over tasks
 - Add basic styling
 
-## Built With
+### Milestone 2:
 
+- Add drag and drop javascript files
+- Add methods for status updates
+- Import new files as modules
+- Add event listeners to list items
+- Make object values update based on index and completed tasks
+- Add strikethrough styling
+- Store items in local storage
+
+## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://ghiftee.github.io/To-do-list/dist/)
+[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/Interactive-list/dist/index.html)
 
 ## Getting Started
 
 To get a local copy up and running:
 
-You should have basic knowledge of HTML,Webpack, Javascript, a text editor and chrome browser.
+You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser.
+
+You can also clone this repository by simply going to [Repository Link](https://github.com/Ghiftee/To-do-list/tree/Interactive-list) and downloading it.
+
+After downloading:
+- Run npm install && npm start.
 
 ## Authors
-
 👤 **Author1**
 
 - GitHub: [@Ghiftee](https://github.com/ghiftee)

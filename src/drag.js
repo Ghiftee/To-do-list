@@ -3,6 +3,7 @@ let currentlyDraggging = 0;
 
 function dragStart(e) {
   currentlyDraggging = e.target.id;
+  e.target.ClassList.add('border', 'border-primary');
 }
 
 function dragOver(e) {

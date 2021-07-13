@@ -51,7 +51,7 @@ function populate(tasks) {
       "d-flex",
       "flex-row",
       "justify-content-between",
-      "align-items-center"
+      "align-items-center",
     );
     listItem.id = task.index;
 

@@ -25,7 +25,6 @@
 - Store items in local storage
 
 ## Built With
-
 - HTML, SCSS, Bootstrap, Webpack, Javascript
 
 ## Live Demo
@@ -38,8 +37,12 @@ To get a local copy up and running:
 
 You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser.
 
-## Authors
+You can also clone this repository by simply going to ![Repository Link](https://github.com/Ghiftee/To-do-list/tree/Interactive-list) and downloading it.
 
+After downloading:
+- Run npm install && npm start.
+
+## Authors
 👤 **Author1**
 
 - GitHub: [@Ghiftee](https://github.com/ghiftee)

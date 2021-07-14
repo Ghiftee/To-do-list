@@ -24,12 +24,21 @@
 - Add strikethrough styling
 - Store items in local storage
 
+### Milestone 3:
+
+- Remove previous code in tasks array
+- Implement a function for adding tasks to tasks array
+- Implement a function for editing added tasks
+- Implement a function for deleting tasks
+- Implement a function for clear all completed
+- Store items in local storage
+
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/Interactive-list/dist/index.html)
+[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/add-remove/dist/index.html)
 
 ## Getting Started
 

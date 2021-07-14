@@ -83,3 +83,15 @@ document.getElementById('task-description').addEventListener('keydown', (e) => {
     populate(sortedTasks);
   }
 });
+
+document.getElementById('clear-completed-button').addEventListener('click', () => {
+  clearAllCompleted();
+  if (localStorage.getItem('tasks')) {
+    allTasks = JSON.parse(localStorage.getItem('tasks'));
+    const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
+    populate(sortedTasks);
+  }
+});
+
+const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
+document.addEventListener('DOMContentLoaded', populate(sortedTasks));

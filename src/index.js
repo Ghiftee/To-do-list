@@ -3,7 +3,7 @@ import './css/styles.css';
 import { dragStart, dragOver, drop } from './drag.js';
 import {
   addNewTask, editTask, deleteTask, clearAllCompleted,
-} from './add_and_remove.js';
+} from './add_remove.js';
 import updateStatus from './status.js';
 
 const taskList = document.getElementById('task-list');

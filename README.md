@@ -24,12 +24,21 @@
 - Add strikethrough styling
 - Store items in local storage
 
+### Milestone 3:
+
+- Remove previous code in tasks array
+- Implement a function for adding tasks to tasks array
+- Implement a function for editing added tasks
+- Implement a function for deleting tasks
+- Implement a function for clear all completed
+- Store items in local storage
+
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/Interactive-list/dist/index.html)
+[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/add-remove/dist/index.html)
 
 ## Getting Started
 
@@ -37,7 +46,7 @@ To get a local copy up and running:
 
 You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser.
 
-You can also clone this repository by simply going to ![Repository Link](https://github.com/Ghiftee/To-do-list/tree/Interactive-list) and downloading it.
+You can also clone this repository by simply going to [Repository Link](https://github.com/Ghiftee/To-do-list/tree/add-remove) and downloading it.
 
 After downloading:
 - Run npm install && npm start.

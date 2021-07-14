@@ -74,3 +74,12 @@ document.getElementById('add-button').addEventListener('click', () => {
   const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
   populate(sortedTasks);
 });
+
+document.getElementById('task-description').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    addNewTask();
+    allTasks = JSON.parse(localStorage.getItem('tasks'));
+    const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
+    populate(sortedTasks);
+  }
+});

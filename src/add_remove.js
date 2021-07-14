@@ -9,3 +9,26 @@ function addNewTask() {
   document.getElementById('task-description').value = '';
   localStorage.setItem('tasks', JSON.stringify(taskArray));
 }
+
+function editTask(e, listItem, textElement, spanItem, allTasks, task, populate) {
+  const menu = e.target;
+  menu.classList.remove('fa-ellipsis-v');
+  menu.classList.add('fa-trash-alt');
+  listItem.classList.add('bg-warning');
+  textElement.remove();
+  const inputElement = document.createElement('input');
+  inputElement.value = task.description;
+  inputElement.classList.add('no-focus', 'border-0', 'bg-warning');
+  spanItem.append(inputElement);
+
+  inputElement.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      task.description = inputElement.value;
+      const sortedTasks = allTasks.sort((a, b) => a.index - b.index);
+      localStorage.setItem('tasks', JSON.stringify(sortedTasks));
+      populate(sortedTasks);
+    }
+  });
+
+  inputElement.focus();
+}

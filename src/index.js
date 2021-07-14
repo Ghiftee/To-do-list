@@ -1,40 +1,14 @@
 import './css/styles.css';
 import { dragStart, dragOver, drop } from './drag.js';
+import {
+  addNewTask, editTask, deleteTask, clearAllCompleted,
+} from './add_and_remove.js';
 import updateStatus from './status.js';
 
 const taskList = document.getElementById('task-list');
 
 let allTasks = [
-  {
-    description: 'Task 1',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Task 2',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'Task 3',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Task 4',
-    completed: false,
-    index: 4,
-  },
-  {
-    description: 'Task 5',
-    completed: false,
-    index: 3,
-  },
-  {
-    description: 'Task 6',
-    completed: false,
-    index: 5,
-  },
+  
 ];
 
 function populate(tasks) {

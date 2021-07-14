@@ -46,7 +46,7 @@ To get a local copy up and running:
 
 You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser.
 
-You can also clone this repository by simply going to [Repository Link](https://github.com/Ghiftee/To-do-list/tree/add-remove) and downloading it.
+You can also clone this repository by simply going to [Repository Link](https://github.com/Ghiftee/To-do-list/) and downloading it.
 
 After downloading:
 - Run npm install && npm start.

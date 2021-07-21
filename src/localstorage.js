@@ -2,22 +2,23 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const dom = new JSDOM();
 
-const localStorage = (function () {
-  let store = {
+const localStorage = (function() {
+  let store = {};
 
-  };
-  
   return {
-    getItem: (key) => {
-      return store[key];
+    getItem: function(key) {
+      return store[key] || null;
     },
-
-    setItem: (key, value) => {
+    setItem: function(key, value) {
       store[key] = value.toString();
+    },
+    removeItem: function(key) {
+      delete store[key];
+    },
+    clear: function() {
+      store = {};
     }
-  }
+  };
 })();
-
-Object.defineProperty(dom.window, 'localStorage', { value: localStorage });
 
 module.exports = localStorage;

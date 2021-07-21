@@ -9,6 +9,14 @@
     "start": "webpack serve --open",
     "build": "webpack"
   },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest",
+      "testEnvironment": "jsdom",
+      "setupFiles": "localStorage.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ghiftee/webpack-exercise.git"
@@ -21,6 +29,7 @@
   },
   "homepage": "https://github.com/Ghiftee/webpack-exercise#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.5",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.6",

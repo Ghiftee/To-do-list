@@ -1,10 +1,9 @@
-const { addNewTask, deleteTask } = require('./test-files/add_and_remove');
-const { populate } = require('./test-files/index');
+const { addNewTask, deleteTask } = require('./test-files/add_and_remove.js');
+const { populate } = require('./test-files/index.js');
 
 describe('Test Add and Remove', () => {
   test('should add tasks to list', () => {
-    document.body.innerHTML = 
-    `
+    document.body.innerHTML = `
       <div>
         <ul id="task-list">
             
@@ -21,11 +20,10 @@ describe('Test Add and Remove', () => {
 
     const taskList = document.querySelectorAll('#task-list li');
     expect(taskList).toHaveLength(1);
-  })
+  });
 
   test('should remove tasks from list', () => {
-    document.body.innerHTML = 
-    `
+    document.body.innerHTML = `
       <div>
         <ul id="task-list">
             
@@ -47,12 +45,12 @@ describe('Test Add and Remove', () => {
     let taskList = document.querySelectorAll('#task-list li');
     const initialLength = taskList.length;
 
-    deleteTask({index: 1});
+    deleteTask({ index: 1 });
     tasks = JSON.parse(localStorage.getItem('tasks'));
     populate(tasks);
 
     taskList = document.querySelectorAll('#task-list li');
 
     expect(taskList).toHaveLength(initialLength - 1);
-  })
-})
+  });
+});

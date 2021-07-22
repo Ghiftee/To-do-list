@@ -1,4 +1,4 @@
-const { dragStart, dragOver, drop } = require('./drag.js');
+const { dragStart, dragOver } = require('./drag.js');
 const { editTask, deleteTask } = require('./add_and_remove.js');
 const { updateStatus } = require('./status.js');
 
@@ -51,6 +51,5 @@ function populate(tasks) {
     });
   });
 }
-
 
 module.exports = { populate };

@@ -1,21 +1,20 @@
+/* eslint-disable func-names */
 const localStorage = (function () {
   let store = {
-    tasks: '[]'
+    tasks: '[]',
   };
 
   return {
-    getItem: (key) => {
-      return store[key];
-    },
+    getItem: (key) => store[key],
     setItem: (key, value) => {
       store[key] = value.toString();
     },
     clear: () => {
       store = {
-        tasks: '[]'
-      }
-    }
-  }
-})();
+        tasks: '[]',
+      };
+    },
+  };
+}());
 
 Object.defineProperty(window, 'localStorage', { value: localStorage });

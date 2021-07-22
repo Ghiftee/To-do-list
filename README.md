@@ -14,6 +14,15 @@
 - Use description method to run test
 - Test add/remove functions
 
+### Milestone 2:
+
+- Mock storage object to localStorage
+- Mock html for list items
+- Use description method to run test
+- Test edit task description
+- Test update completed status
+- Test drag/drop functions
+- Test clear all completed function
 
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript and Jest

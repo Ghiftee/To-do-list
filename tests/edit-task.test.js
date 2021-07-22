@@ -17,18 +17,22 @@ describe('Test Edit Task Functionality', () => {
     populate(tasks);
     const addedListItemElement = document.querySelector('#task-list li');
     const spanItem = addedListItemElement.children[0];
-    let textElement = spanItem.children[1];
     const mockEvent = {
       target: document.createElement('i'),
     };
-    editTask(mockEvent, addedListItemElement, textElement, spanItem, tasks, tasks[0], populate);
+    editTask(mockEvent,
+      addedListItemElement,
+      spanItem.children[1],
+      spanItem,
+      tasks,
+      tasks[0],
+      populate);
     const inputElement = spanItem.children[1];
     inputElement.value = 'New Task Description';
     const e = document.createEvent('HTMLEvents');
     e.initEvent('keydown', false, true);
     e.key = 'Enter';
     inputElement.dispatchEvent(e);
-    textElement = spanItem.children[1];
-    expect(textElement.value).toBe('New Task Description');
+    expect(spanItem.children[1].value).toBe('New Task Description');
   });
 });

@@ -1,11 +1,10 @@
-const { dragOver, dragStart, drop } = require('./test-files/drag');
-const { populate } = require('./test-files/index');
-const { addNewTask } = require('./test-files/add_and_remove');
+const { dragOver, dragStart, drop } = require('./test-files/drag.js');
+const { populate } = require('./test-files/index.js');
+const { addNewTask } = require('./test-files/add_and_remove.js');
 
 describe('Test Drag and Drop functionality', () => {
   test('should change task\'s index on drag drop', () => {
-    document.body.innerHTML = 
-    `
+    document.body.innerHTML = `
       <div>
         <ul id="task-list">
             
@@ -30,20 +29,20 @@ describe('Test Drag and Drop functionality', () => {
 
     populate(tasks);
 
-    let taskList = document.querySelectorAll('#task-list li');
+    const taskList = document.querySelectorAll('#task-list li');
     const firstLiElement = taskList[0];
     const thirdLiElement = taskList[2];
 
     const firstElementMockEvent = {
-      target : firstLiElement
-    }
+      target: firstLiElement,
+    };
     const thirdElementMockEvent = {
-      target : thirdLiElement,
-      preventDefault: () => {}
-    }
+      target: thirdLiElement,
+      preventDefault: () => {},
+    };
     const dropMockEvent = {
-      stopPropagation: () => {}
-    }
+      stopPropagation: () => {},
+    };
 
     dragStart(firstElementMockEvent);
     dragOver(thirdElementMockEvent);
@@ -56,8 +55,7 @@ describe('Test Drag and Drop functionality', () => {
   });
 
   test('should change task\'s index on drag drop', () => {
-    document.body.innerHTML = 
-    `
+    document.body.innerHTML = `
       <div>
         <ul id="task-list">
             
@@ -85,20 +83,20 @@ describe('Test Drag and Drop functionality', () => {
 
     populate(tasks);
 
-    let taskList = document.querySelectorAll('#task-list li');
+    const taskList = document.querySelectorAll('#task-list li');
     const fourthLiElement = taskList[3];
     const firstLiElement = taskList[0];
 
     const firstElementMockEvent = {
-      target : firstLiElement,
-      preventDefault: () => {}
-    }
+      target: firstLiElement,
+      preventDefault: () => {},
+    };
     const fourthElementMockEvent = {
-      target : fourthLiElement,
-    }
+      target: fourthLiElement,
+    };
     const dropMockEvent = {
-      stopPropagation: () => {}
-    }
+      stopPropagation: () => {},
+    };
 
     dragStart(fourthElementMockEvent);
     dragOver(firstElementMockEvent);

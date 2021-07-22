@@ -4,18 +4,10 @@
   "description": "![](https://camo.githubusercontent.com/8a4ae3fb98faf74ddf78a6677ceaa6e8872f7f340f569b7c5e1aa9bcc4061d95/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6963726f76657273652d626c756576696f6c6574)",
   "private": true,
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "watch": "jest --watch",
     "start": "webpack serve --open",
     "build": "webpack"
-  },
-  "jest": {
-    "verbose": true,
-    "transform": {
-      "^.+\\.[t|j]sx?$": "babel-jest"
-    },
-    "testEnvironment": "jsdom",
-    "setupFiles": ["jest-localstorage-mock"]
   },
   "repository": {
     "type": "git",
@@ -33,7 +25,6 @@
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.6",
-    "jest-localstorage-mock": "^2.4.14",
     "style-loader": "^3.0.0",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2",

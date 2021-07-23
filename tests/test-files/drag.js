@@ -12,11 +12,11 @@ function dragOver(e) {
 }
 
 function drop(e, sortedTask, populate) {
-  const movedItem = sortedTask.splice(currentlyDraggging, 1);
-  sortedTask.splice(currentPosition, 0, movedItem[0]);
+  const movedItem = sortedTask.splice(currentlyDraggging - 1, 1);
+  sortedTask.splice(currentPosition - 1, 0, movedItem[0]);
 
   sortedTask.forEach((a, b) => {
-    a.index = b;
+    a.index = b + 1;
   });
 
   localStorage.setItem('tasks', JSON.stringify(sortedTask));

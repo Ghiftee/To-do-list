@@ -7,14 +7,40 @@
 
 ![screenshot](images/to-do-list-structure.png)
 
-### Milestone 1:
+### To-do list Milestone 1:
+
+- Set up project with webpack
+- Create basic HTML UI
+- Use a function to iterate over tasks
+- Add basic styling
+
+### To-do list Milestone 2:
+
+- Add drag and drop javascript files
+- Add methods for status updates
+- Import new files as modules
+- Add event listeners to list items
+- Make object values update based on index and completed tasks
+- Add strikethrough styling
+- Store items in local storage
+
+### To-do list Milestone 3:
+
+- Remove previous code in tasks array
+- Implement a function for adding tasks to tasks array
+- Implement a function for editing added tasks
+- Implement a function for deleting tasks
+- Implement a function for clear all completed
+- Store items in local storage
+
+### Testing Milestone 1:
 
 - Mock storage object to localStorage
 - Mock html for list items
 - Use description method to run test
 - Test add/remove functions
 
-### Milestone 2:
+### Testing Milestone 2:
 
 - Mock storage object to localStorage
 - Mock html for list items
@@ -29,7 +55,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Ghiftee/To-do-list/add-remove/dist/index.html)
+[Live Demo Link](https://ghiftee.github.io/To-do-list/dist/)
 
 ## Getting Started
 
@@ -46,7 +72,14 @@ After downloading:
 - You can also make your tests run automatically after every update by adding "watch": "jest --watch" to your package.json file under scripts
 - Then run npm run watch
 
-## Authors
+## To-do list Author
+👤 **Gift Uwhubetine**
+
+- GitHub: [@githubhandle](https://github.com/ghiftee)
+- Twitter: [@twitterhandle](https://twitter.com/i_ghiftee)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/giftuwhubetine)
+
+## Testing Milestone Authors
 👤 **Gift Uwhubetine**
 
 - GitHub: [@githubhandle](https://github.com/ghiftee)
